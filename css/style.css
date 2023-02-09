@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Poppins:wght@100;200&family=Raleway:wght@800&family=Righteous&family=Unbounded&family=Unna:wght@700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    background-image: url('../images/dark-geometric.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    font-size: 1.2em;
+    margin:2em 0.1em;
+    padding: 1em 3em;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+    transition: transform 0.25s ease;
+}
+
+.container{
+    margin: 1.2em auto;
+    min-width: 30vw;
+    box-shadow: 0 2px 5px grey;
+    border-radius: 2em;
+    text-align: center;
+}
+
+.login-btn{
+    float: left;
+}
+
+.register-btn{
+    float: right;
+}
+
+button:hover{
+    background-color: #98777b84;
+}
+
+button:active{
+    transform: scale(1, -1);
+}
+
+form {
+    padding: 1.2em 2em;
+    min-width: 40vw;
+}
+
+form > h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 5px;
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+div > input {
+    background-color: rgba(86, 85, 85, 0.662);
+    color: rgb(230, 230, 230);
+    border: solid 2px #c0b3b3;
+    border-radius: 0.5em;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #007bff;
+    border-bottom: 2px solid #007bff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.material-symbols-rounded {
+  margin-bottom: 1.2em;
+}
+
+.success {
+    color: blue;
+}
+.error{
+    padding: 0.5em;
+    border: 1px solid rgba(246, 2, 2, 0.494);
+    color: rgb(92, 92, 92);
+}
+
+@media screen and (min-width: 992px){
+    buttons{
+        display: block;
+    }
+}
