@@ -1,5 +1,6 @@
 const form = document.querySelector("#form");
 
+// Validate username is not emplty and had certain length
 function validateUsername() {
   let valid = false;
   const min = 3,
@@ -19,6 +20,7 @@ function validateUsername() {
   return valid;
 }
 
+// Validate email address using regular expression
 const validateEmail = () => {
   let valid = false;
   const email = document.querySelector("#email");
@@ -37,6 +39,7 @@ const validateEmail = () => {
   return valid;
 };
 
+// Validate password, regular expression used for stronger password strength
 const validatePassword = () => {
   let valid = false;
   const passwordElement = document.querySelector("#password");
@@ -57,6 +60,7 @@ const validatePassword = () => {
   return valid;
 };
 
+// Validate confirm password match the password field
 const validateConfirmPassword = () => {
   let valid = false;
   const password = document.querySelector("#password").value.trim();
@@ -73,16 +77,18 @@ const validateConfirmPassword = () => {
   return valid;
 };
 
+// Change input filed class on error
 function showError(input, message) {
   const parentElement = input.parentElement;
   parentElement.classList.remove("success");
   parentElement.classList.add("error");
-
+  // display error below input filed
   const error = parentElement.querySelector("small");
   error.style.color = "red";
   error.textContent = message;
 }
 
+// Success page behaviour
 const showSuccess = (input) => {
   const formField = input.parentElement;
 
@@ -93,6 +99,7 @@ const showSuccess = (input) => {
   error.textContent = "";
 };
 
+// Trigger validation on submit
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   if (e.submitter.id === "login") {
@@ -110,9 +117,6 @@ form.addEventListener("submit", function (e) {
       isPasswordValid &&
       isConfirmPasswordValid;
   }
-  //   validation complete
-  //   if (isFormValid) {
-  //   }
 });
 
 const debounce = (fn, delay = 500) => {
@@ -127,6 +131,7 @@ const debounce = (fn, delay = 500) => {
   };
 };
 
+// Validate on input
 form.addEventListener(
   "input",
   debounce(function (e) {
