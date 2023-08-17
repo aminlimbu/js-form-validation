@@ -6,12 +6,11 @@
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: "Oxygen", sans-serif;
     font-size: 16px;
-    background-color: #f4f4f4;
-    background-image: url('../images/dark-geometric.png');
+    background-color: #a1a0a0;
+    background-image: url("../images/dark-geometric.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,43 +19,48 @@ body {
     margin: 0;
 }
 
+heading h1 {
+    padding: 1rem;
+}
+
 .home-buttons {
     display: flex;
     justify-content: space-evenly;
 }
 
-button{
+button {
     font-size: 1.2em;
-    margin:2em 0.1em;
+    margin: 2em 0.1em;
     padding: 1em 3em;
     border-radius: 10px;
     border: none;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
-    background-color: transparent;
+    background-color: #a1a0a0;
     transition: transform 0.25s ease;
 }
 
-.container{
+.container {
     margin: 1.2em auto;
-    min-width: 30vw;
+    max-width: 500px;
     box-shadow: 0 2px 5px grey;
-    border-radius: 2em;
+    border-radius: 1em;
     text-align: center;
+    background-color: #a1a0a0;
 }
 
-.login-btn{
+.login-btn {
     float: left;
 }
 
-.register-btn{
+.register-btn {
     float: right;
 }
 
-button:hover{
+button:hover {
     background-color: #98777b84;
 }
 
-button:active{
+button:active {
     transform: scale(1, -1);
 }
 
@@ -72,7 +76,7 @@ form > h1 {
 }
 
 .form-field {
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
 .form-field label {
@@ -114,21 +118,33 @@ div > input {
     outline: none;
 }
 
-.material-symbols-rounded {
-  margin-bottom: 1.2em;
+.links {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 200, "opsz" 40;
 }
 
 .success {
     color: blue;
 }
-.error{
+.error {
     padding: 0.5em;
     border: 1px solid rgba(246, 2, 2, 0.494);
     color: rgb(92, 92, 92);
 }
 
-@media screen and (min-width: 992px){
-    buttons{
+@media screen and (min-width: 992px) {
+    buttons {
         display: block;
     }
 }
