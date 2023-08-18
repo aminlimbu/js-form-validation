@@ -50,10 +50,12 @@ button {
 
 .login-btn {
     float: left;
+    cursor: pointer;
 }
 
 .register-btn {
     float: right;
+    cursor: pointer;
 }
 
 button:hover {
@@ -61,12 +63,12 @@ button:hover {
 }
 
 button:active {
-    transform: scale(1, -1);
+    transform: scale(0.98);
 }
 
 form {
     padding: 1.2em 2em;
-    min-width: 40vw;
+    width: 100%;
 }
 
 form > h1 {
@@ -132,6 +134,12 @@ div > input {
 .material-symbols-outlined {
     vertical-align: middle;
     font-variation-settings: "FILL" 1, "wght" 300, "GRAD" 200, "opsz" 40;
+}
+
+.material-symbols-outlined:hover {
+    color: white;
+    transform: scale(1.5);
+    transition: transform 0.2s ease-in-out;
 }
 
 .success {
