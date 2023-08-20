@@ -16,16 +16,33 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
 }
 
-heading h1 {
+.container {
+    /* margin: 1.2em auto; */
+    margin: 0.5rem;
+    max-width: 500px;
+    box-shadow: 0 2px 5px grey;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #a1a0a0;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
     padding: 1rem;
 }
 
 .home-buttons {
     display: flex;
     justify-content: space-evenly;
+    padding: 0.5rem;
 }
 
 button {
@@ -37,15 +54,6 @@ button {
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
     background-color: #a1a0a0;
     transition: transform 0.25s ease;
-}
-
-.container {
-    margin: 1.2em auto;
-    max-width: 500px;
-    box-shadow: 0 2px 5px grey;
-    border-radius: 1em;
-    text-align: center;
-    background-color: #a1a0a0;
 }
 
 .login-btn {
@@ -121,7 +129,7 @@ div > input {
 }
 
 .links {
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: white;
